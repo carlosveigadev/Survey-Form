@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <link rel="stylesheet" href="styles.css" href="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap" rel="stylesheet">
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -18,17 +19,39 @@
         <form id="survey-form">
           <label id="name-label" for="name">
             <p>Name</p>
-            <input id="name" type="text" name="name" value="" placeholder="Enter your name" required />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              value=""
+              placeholder="Enter your name"
+              required
+            />
           </label>
           <label id="email-label" for="email">
             <p>e-mail</p>
-            <input id="email" type="email"  name="email" value="" placeholder="Enter your e-mail" required/>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Enter your e-mail"
+              required
+            />
           </label>
           <label id="number-label" for="age">
             <p>Age (optional)</p>
-            <input id="number" type="number" name="age" value="" placeholder="Age" min="10" max="60" />
+            <input
+              id="number"
+              type="number"
+              name="age"
+              value=""
+              placeholder="Age"
+              min="10"
+              max="60"
+            />
           </label>
-          <label for="role">
+          <label id="role" for="role">
             <p>Which option best describes your current role?</p>
             <select id="dropdown" class="form" name="role" required>
               <option disabled="" selected="" value=""
@@ -91,7 +114,9 @@
             <p>Any comments or suggestions?</p>
             <textarea name="comments" rows="8" cols="80"></textarea>
           </div>
-          <button id="submit" form="survey-form" type="submit" name="submit">Submit</button>
+          <button id="submit" form="survey-form" type="submit" name="submit">
+            Submit
+          </button>
         </form>
       </fieldset>
     </main>
