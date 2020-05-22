@@ -1,0 +1,115 @@
+* {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+  --color-gray: ##495057;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+#title {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 20px;
+  margin: 5px 0;
+}
+
+#description {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin: 0 0 20px 0;
+}
+
+fieldset {
+  width: 720px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background: var(--color-darkblue-alpha);
+  border: none;
+  text-align: left;
+  padding: 40px;
+}
+
+label p {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+#name-label input,
+#email-label input,
+#number-label input,
+#role select,
+#feature select {
+  width: 632px;
+  height: 38px;
+  border-radius: 0.25rem;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+#radio div {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#improv {
+  display: flex;
+  flex-direction: column;
+}
+
+#improv label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+#comments textarea {
+  width: -webkit-fill-available;
+}
+#submit {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}

@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<link rel="stylesheet" href="styles.css" href="text/css">
+  <link rel="stylesheet" href="styles.css" href="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
   </head>
   <body>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <head>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </head>
+    <main>
+      <fieldset>
+        <form id="survey-form">
+          <label id="name-label" for="name">
+            <p>Name</p>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              value=""
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label id="email-label" for="email">
+            <p>e-mail</p>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Enter your e-mail"
+              required
+            />
+          </label>
+          <label id="number-label" for="age">
+            <p>Age (optional)</p>
+            <input
+              id="number"
+              type="number"
+              name="age"
+              value=""
+              placeholder="Age"
+              min="10"
+              max="60"
+            />
+          </label>
+          <label id="role" for="role">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" class="form" name="role" required>
+              <option disabled="" selected="" value=""
+                >Select current role</option
+              >
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="joblearner">Full Time Learner</option>
+              <option value="preferNotSay">Prefer Not To Say</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label id="radio" for="recommend">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div>
+              <input type="radio" name="recommend" value="definitely" checked />
+              <p>Definitely</p>
+            </div>
+            <div>
+              <input type="radio" name="recommend" value="maybe" />
+              <p>Maybe</p>
+            </div>
+            <div>
+              <input type="radio" name="recommend" value="notSure" />
+              <p>Not Sure</p>
+            </div>
+          </label>
+          <label id="feature" for="feature">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select class="form" name="feature">
+              <option disabled="" selected="" value="">Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </label>
+          <label id="improv" for="improvement">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="frontEnd">
+              <input type="checkbox" name="fronEnd" value="frontEnd" />Front-end Projects
+            </label>
+            <label for="backEnd"
+              ><input type="checkbox" name="fronEnd" value="backEnd" />Back-end
+              Projects</label
+            >
+            <label for="dataVis"
+              ><input type="checkbox" name="fronEnd" value="dataVis" />Data
+              Visualization</label
+            >
+            <label for="challanges"
+              ><input
+                type="checkbox"
+                name="fronEnd"
+                value="challanges"
+              />Challanges</label
+            >
+            <label for="openSourceCommunity">
+              <input
+                type="checkbox"
+                name="fronEnd"
+                value="openSourceCommunity"
+              />Open Source Community</label
+            >
+            <label for="gitterHelp">
+              <input type="checkbox" name="fronEnd" value="gitterHelp" />Gitter
+              Help Rooms
+            </label>
+            <label for="videos">
+              <input type="checkbox" name="fronEnd" value="videos" />Videos
+            </label>
+            <label for="cityMeetups">
+              <input type="checkbox" name="fronEnd" value="cityMeetups" />City
+              Meetups</label
+            >
+            <label for="wiki">
+              <input type="checkbox" name="fronEnd" value="wiki" />Wiki</label
+            >
+            <label for="addCourses">
+              <input
+                type="checkbox"
+                name="fronEnd"
+                value="addCourses"
+              />Adittional Courses</label
+            >
+          </label>
+          <div class="comments">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" rows="8" cols="80" placeholder="Enter your comments here"></textarea>
+          </div>
+          <button id="submit" form="survey-form" type="submit" name="submit">
+            Submit
+          </button>
+        </form>
+      </fieldset>
+    </main>
   </body>
 </html>
