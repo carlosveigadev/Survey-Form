@@ -6,6 +6,66 @@
     <title></title>
   </head>
   <body>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <head>
+      <h1>freeCodeCamp Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+    </head>
+    <main>
+      <fieldset>
+        <label for="name">
+          <p>Name</p>
+          <input type="text" name="name" value="Enter your name" required>
+        </label>
+        <label for="email">
+          <p>e-mail</p>
+          <input type="email" name="email" value="Enter your e-mail" required>
+        </label>
+        <label for="age">
+          <p>Age (optional)</p>
+          <input type="number" name="age" value="Age" min="10" max="60">
+        </label>
+        <label for="role">
+          <p>Which option best describes your current role?</p>
+            <select class="form" name="role" required>
+              <option disabled="" selected="" value="">Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="joblearner">Full Time Learner</option>
+              <option value="preferNotSay">Prefer Not To Say</option>
+              <option value="other">Other</option>
+          </select>
+        </label>
+        <label for="recommend">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" name="recommend" value="definitely" checked> Definitely
+          <input type="radio" name="recommend" value="maybe"> Maybe
+          <input type="radio" name="recommend" value="notSure"> Not Sure
+        </label>
+        <label for="feature">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select class="form" name="feature">
+              <option disabled="" selected="" value="">Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+          </select>
+        </label>
+        <label for="improvement">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input type="checkbox" name="fronEnd" value="frontEnd">Front-end Projects
+          <input type="checkbox" name="fronEnd" value="backEnd">Back-end Projects
+          <input type="checkbox" name="fronEnd" value="dataVis">Data Visualization
+          <input type="checkbox" name="fronEnd" value="challanges">Challanges
+          <input type="checkbox" name="fronEnd" value="openSourceCommynity">Open Source Community
+          <input type="checkbox" name="fronEnd" value="gitterHelp">Gitter Help Rooms
+          <input type="checkbox" name="fronEnd" value="videos">Videos
+          <input type="checkbox" name="fronEnd" value="cityMeetups">City Meetups
+          <input type="checkbox" name="fronEnd" value="wiki">Wiki
+          <input type="checkbox" name="fronEnd" value="addCourses">Adittional Courses
+        </label>
+      </fieldset>
+    </main>
   </body>
 </html>
