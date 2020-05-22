@@ -1,15 +1,20 @@
-*  {
+* {
   --color-white: #f3f3f3;
   --color-darkblue: #1b1b32;
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
   --color-gray: ##495057;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -52,7 +57,8 @@ label p {
 #name-label input,
 #email-label input,
 #number-label input,
-#role select  {
+#role select,
+#feature select {
   width: 632px;
   height: 38px;
   border-radius: 0.25rem;
@@ -65,14 +71,45 @@ label p {
   display: flex;
   flex-direction: column;
   vertical-align: middle;
+  margin-bottom: 20px;
 }
 
 #radio div {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
-input[type=radio] {
+
+input[type="radio"],
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+#improv {
+  display: flex;
+  flex-direction: column;
+}
+
+#improv label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+#comments textarea {
+  width: -webkit-fill-available;
+}
+#submit {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
 }

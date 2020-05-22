@@ -82,7 +82,7 @@
               <p>Not Sure</p>
             </div>
           </label>
-          <label for="feature">
+          <label id="feature" for="feature">
             <p>What is your favorite feature of freeCodeCamp?</p>
             <select class="form" name="feature">
               <option disabled="" selected="" value="">Select an option</option>
@@ -92,38 +92,58 @@
               <option value="openSource">Open Source</option>
             </select>
           </label>
-          <label for="improvement">
+          <label id="improv" for="improvement">
             <p>What would you like to see improved? (Check all that apply)</p>
-            <input type="checkbox" name="fronEnd" value="frontEnd" />Front-end
-            Projects
-            <input type="checkbox" name="fronEnd" value="backEnd" />Back-end
-            Projects
-            <input type="checkbox" name="fronEnd" value="dataVis" />Data
-            Visualization
-            <input
-              type="checkbox"
-              name="fronEnd"
-              value="challanges"
-            />Challanges
-            <input
-              type="checkbox"
-              name="fronEnd"
-              value="openSourceCommynity"
-            />Open Source Community
-            <input type="checkbox" name="fronEnd" value="gitterHelp" />Gitter
-            Help Rooms
-            <input type="checkbox" name="fronEnd" value="videos" />Videos
-            <input type="checkbox" name="fronEnd" value="cityMeetups" />City
-            Meetups <input type="checkbox" name="fronEnd" value="wiki" />Wiki
-            <input
-              type="checkbox"
-              name="fronEnd"
-              value="addCourses"
-            />Adittional Courses
+            <label for="frontEnd">
+              <input type="checkbox" name="fronEnd" value="frontEnd" />Front-end Projects
+            </label>
+            <label for="backEnd"
+              ><input type="checkbox" name="fronEnd" value="backEnd" />Back-end
+              Projects</label
+            >
+            <label for="dataVis"
+              ><input type="checkbox" name="fronEnd" value="dataVis" />Data
+              Visualization</label
+            >
+            <label for="challanges"
+              ><input
+                type="checkbox"
+                name="fronEnd"
+                value="challanges"
+              />Challanges</label
+            >
+            <label for="openSourceCommunity">
+              <input
+                type="checkbox"
+                name="fronEnd"
+                value="openSourceCommunity"
+              />Open Source Community</label
+            >
+            <label for="gitterHelp">
+              <input type="checkbox" name="fronEnd" value="gitterHelp" />Gitter
+              Help Rooms
+            </label>
+            <label for="videos">
+              <input type="checkbox" name="fronEnd" value="videos" />Videos
+            </label>
+            <label for="cityMeetups">
+              <input type="checkbox" name="fronEnd" value="cityMeetups" />City
+              Meetups</label
+            >
+            <label for="wiki">
+              <input type="checkbox" name="fronEnd" value="wiki" />Wiki</label
+            >
+            <label for="addCourses">
+              <input
+                type="checkbox"
+                name="fronEnd"
+                value="addCourses"
+              />Adittional Courses</label
+            >
           </label>
           <div class="comments">
             <p>Any comments or suggestions?</p>
-            <textarea name="comments" rows="8" cols="80"></textarea>
+            <textarea name="comments" rows="8" cols="80" placeholder="Enter your comments here"></textarea>
           </div>
           <button id="submit" form="survey-form" type="submit" name="submit">
             Submit
