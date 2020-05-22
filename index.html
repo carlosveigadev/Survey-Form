@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <link rel="stylesheet" href="styles.css" href="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -64,12 +67,20 @@
               <option value="other">Other</option>
             </select>
           </label>
-          <label for="recommend">
+          <label id="radio" for="recommend">
             <p>Would you recommend freeCodeCamp to a friend?</p>
-            <input type="radio" name="recommend" value="definitely" checked />
-            Definitely
-            <input type="radio" name="recommend" value="maybe" /> Maybe
-            <input type="radio" name="recommend" value="notSure" /> Not Sure
+            <div>
+              <input type="radio" name="recommend" value="definitely" checked />
+              <p>Definitely</p>
+            </div>
+            <div>
+              <input type="radio" name="recommend" value="maybe" />
+              <p>Maybe</p>
+            </div>
+            <div>
+              <input type="radio" name="recommend" value="notSure" />
+              <p>Not Sure</p>
+            </div>
           </label>
           <label for="feature">
             <p>What is your favorite feature of freeCodeCamp?</p>

@@ -3,6 +3,7 @@
   --color-darkblue: #1b1b32;
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
+  --color-gray: ##495057;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
@@ -57,5 +58,21 @@ label p {
   border-radius: 0.25rem;
   padding: 6px 12px;
   margin-bottom: 20px;
-  color: #49505
+  color: gray;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+#radio div {
+  display:flex;
+  flex-direction: row;
+}
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
